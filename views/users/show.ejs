@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 ">
+            
+                <p class="lead" ><h1 class="whitetext middle" ><%= user.firstName%> </h1></p>
+                <img src="<%=user.avatar%>"  class="img-responsive img-circle">
+            <hr>
+            <div class="list-group">
+                <li class="list-group-item active"><strong><%= user.username%></strong></li>
+                <li class="list-group-item"><%= user.email%></li>
+                <li class="list-group-item"><strong>Campgrounds submitted</strong>:</li>
+                <% campgrounds.forEach(function(campground){%>
+                <li class="list-group-item"><a href="/campgrounds/<%=campground.id%>"><%=campground.name%></a></li>
+                <% }); %>
+           
+            </div>
+            
+        </div>
+        <% campgrounds.forEach(function(campground){%>
+        <div class="col-md-8">
+            <div class="thumbnail">
+                <img class="image-responsive" src="<%= campground.image%>">
+                <div class="caption-full">
+                    <h4 class="pull-right">$<%=campground.price%>/Night</h4>
+                    <h4><a href="/campgrounds/<%=campground.id%>"><%= campground.name%></a></h4>
+                    <p><%= campground.description.substring(0,150) %> ....</p>
+                    <p>
+                 </div>
+            </div>
+        </div>
+         <% }); %>
+        
+    </div>
+</div>
+
+
+<% include ../partials/footer %>

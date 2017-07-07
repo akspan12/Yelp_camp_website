@@ -1,0 +1,105 @@
+
+.thumbnail img{
+    width: 100%;
+   
+}
+.homethumbnail img{
+    height: 250px;
+}
+
+.thumbnail{
+    padding: 0;
+     height: auto;
+     z-index: 1;
+    background-color: #F0FFFF;
+    box-shadow: 0px 10px 5px #000000;
+   
+}
+
+
+
+.thumbnail .caption-full{
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+#map {
+    height: 350px;
+    width: 100%;
+}
+
+html{
+    height: 100%;
+}
+body{
+      background:url(https://images.unsplash.com/photo-1486082570281-d942af5c39b7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=);
+     background-size: cover;
+      background-attachment: fixed;
+	padding-top: 68px;
+	 margin: 0px;
+}
+
+.whitetext{
+    color: white;
+}
+
+#map{
+   margin-bottom: 10px;
+}
+
+.img-circle{
+    margin-left: 18%;
+    
+}
+
+.navbar{
+    background: #000;
+
+}
+
+.link {
+  transition: 0.5s;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link:hover {
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: 5px 10px;
+}
+
+#brand{
+    font-size: 2.0em;
+    color: white;    
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-family: Raleway;
+}
+
+nav {
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron{
+    text-align:center;
+    background-color: #F0F8FF;
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.middle{
+    text-align:center;
+}
+
+.fixedUnit{
+    position: fixed;
+}
